@@ -20,6 +20,12 @@ jobs:
           echo "PSL1GHT=/opt/ps3dev" >> $GITHUB_ENV
           echo "/opt/ps3dev/bin" >> $GITHUB_PATH
           echo "/opt/ps3dev/ppu/bin" >> $GITHUB_PATH
+      - name: Instalar Tiny3D
+        run: |
+          git clone --depth 1 https://github.com/ps3dev/tiny3d.git /tmp/tiny3d
+          cd /tmp/tiny3d
+          make
+          make install
       - name: Gerar icone
         run: |
           python3 - <<'PY'
