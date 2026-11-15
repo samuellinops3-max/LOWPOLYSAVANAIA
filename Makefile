@@ -5,9 +5,9 @@ include $(PSL1GHT)/ppu_rules
 
 .DEFAULT_GOAL := all
 
-TARGET    := animal
-TITLE     := Animal Life Savanna
-APPID     := ANML00001
+TARGET    := batatinha
+TITLE     := Batatinha Frita 1, 3
+APPID     := BTNF00001
 CONTENTID := UP0001-$(APPID)_00-0000000000000000
 SFOXML    := sfo.xml
 PORTLIBS  := $(PS3DEV)/portlibs/ppu
