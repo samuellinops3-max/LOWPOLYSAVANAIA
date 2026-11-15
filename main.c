@@ -272,7 +272,7 @@ int main(int argc, char *argv[]) {
     (void)argc; (void)argv;
 
     hw_init();
-    sysRegisterCallback(EVENT_SLOT0, sysutil_cb, NULL);
+    sysUtilRegisterCallback(SYSUTIL_EVENT_SLOT0, sysutil_cb, NULL);
     mundo_init();
 
     const float dt = 1.0f / 60.0f;
